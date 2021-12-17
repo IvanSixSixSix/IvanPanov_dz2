@@ -7,5 +7,11 @@ repositories {
 }
 
 dependencies {
-
+    testImplementation ('com.codeborne:selenide:6.1.1',//Подключение Junit
+            'org.junit.jupiter:junit-jupiter-api:5.8.2')
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2' //зависимость для работы тестов
 }
+test{
+    useJUnitPlatform()
+}
+
