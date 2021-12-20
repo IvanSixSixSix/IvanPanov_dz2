@@ -41,8 +41,7 @@ public class TextBoxTest {
         $("[for=hobbies-checkbox-3]").click();
 
         $("#uploadPicture").scrollTo();
-        File photoTest = new File("C:\\Users\\ivan.panov\\Documents\\ShareX\\Screenshots\\2021-12\\DZ_1.png");
-        $("#uploadPicture").uploadFile(photoTest);
+        $("#uploadPicture").uploadFile( new File("src/test/resources/1.png"));
 
         $("#currentAddress").setValue("Moscow");
 
@@ -62,7 +61,7 @@ public class TextBoxTest {
                 text("29 August,2000"),
                 text("Maths"),
                 text("Sports, Reading, Music"),
-                text("DZ_1.png"),
+                text("1.png"),
                 text("Moscow"),
                 text("Haryana Karnal"));
     }
